@@ -1,4 +1,4 @@
-# sb
+# newkr
 
 > Nuxt.js project
 
