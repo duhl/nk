@@ -1,15 +1,17 @@
 <template>
   <div class="contain">
-      <ul class="similar">
-        <li>相似推荐</li>
+    <ul class="similar">
+      <li>相似推荐</li>
+    </ul>
+    <div class="list-con">
+      <ul v-for="item in dataList" :key="item.id">
+        <a :href="`/detail/${item.id}`" :id="item.id">
+          <li><img :src="item.theme" alt=""></li>
+          <li class="tit">{{item.name}}{{item.id}}</li>
+          <li class="price">{{item.price}}</li>
+        </a>
       </ul>
-      <div class="list-con">
-          <ul v-for="item in dataList" :key="item.id">
-              <li><img :src="item.theme" alt=""></li>
-              <li class="tit">{{item.name}}</li>
-              <li class="price">{{item.price}}</li>
-          </ul>
-      </div>
+    </div>
   </div>
 </template>
 

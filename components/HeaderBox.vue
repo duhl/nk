@@ -1,14 +1,18 @@
 <template>
   <div class="main 1shadow">
     <section class="header-box">
-        <div class="logo"></div>
-        <div class="nav">
-          <ul>
-            <li class="active">吉祥物案例市场</li>
-            <li>品牌IP定制开发</li>
-            <li>品牌营销视频</li>
-          </ul>
-        </div>
+      <div class="logo"></div>
+      <div class="nav">
+        <ul>
+          <li class="active">
+            <!-- <nuxt-link :to="{name:'index'}"> -->
+            吉祥物案例市场
+            <!-- </nuxt-link> -->
+          </li>
+          <li>品牌IP定制开发</li>
+          <li>品牌营销视频</li>
+        </ul>
+      </div>
     </section>
   </div>
 </template>
