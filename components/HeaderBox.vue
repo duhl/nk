@@ -1,7 +1,9 @@
 <template>
   <div class="main 1shadow">
     <section class="header-box">
-      <div class="logo"></div>
+      <div class="logo">
+        <nuxt-link :to="{name:'index'}"></nuxt-link>
+      </div>
       <div class="nav">
         <ul>
           <li class="active">
@@ -35,6 +37,11 @@
       height: 80px;
       background: url("~static/images/global/logo.png") no-repeat;
       background-size: contain;
+      a {
+        width: 100px;
+        height: 80px;
+        display: block;
+      }
     }
     .nav {
       float: right;
