@@ -27,7 +27,7 @@ export default {
     },
     {
       id: 1002,
-      thumbnail: "../../images/product_list/1001/preview_1002.gif",
+      thumbnail: "../../images/product_list/1002/preview_1002.gif",
       name: "探索全世界只为进入你的世界-2",
       price: "9999",
       detail: {
