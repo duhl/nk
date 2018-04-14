@@ -2,6 +2,7 @@ export default {
   status: 0,
   data: [{
       id: 1001,
+      // thumbnail: "../../images/product_list/1001/preview_1001.jpg",
       thumbnail: "../../images/product_list/1001/preview_1001.jpg",
       name: "探索全世界只为进入你的世界",
       price: "8888",
