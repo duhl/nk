@@ -6,8 +6,8 @@
     <div class="list-con">
       <ul v-for="item in dataList" :key="item.id">
         <a :href="`/detail/${item.id}`" :id="item.id">
-          <li><img :src="item.theme" alt=""></li>
-          <li class="tit">{{item.name}}{{item.id}}</li>
+          <li><img :src="item.thumbnail" alt=""></li>
+          <li class="tit">{{item.name}}</li>
           <li class="price">{{item.price}}</li>
         </a>
       </ul>

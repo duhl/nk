@@ -5,15 +5,16 @@
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
         <el-breadcrumb-item>吉祥物案例市场</el-breadcrumb-item>
-        <el-breadcrumb-item>{{currentId}}</el-breadcrumb-item>
+        <el-breadcrumb-item>{{theData.name}}</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="intro-box">
       <div class="leftcon">
         <template>
           <el-carousel height="500px" :interval="5000" arrow="always">
-            <el-carousel-item v-for="item in 4" :key="item">
-              <h3>{{ item }}</h3>
+            <el-carousel-item v-for="item in theData.detail.focus" :key="item">
+              <!-- <h3>{{ item }}</h3> -->
+              <img :src="item.preview" alt="">
             </el-carousel-item>
           </el-carousel>
         </template>
@@ -35,8 +36,11 @@
         </ul>
       </div>
     </div>
+    <div class="about-bar">
+      相关视频
+    </div>
     <div class="video-box">
-      <video id="my-video" classname="video-js vjs-default-skin" controls="" autoplay="" preload="auto" loop width="" height="450"> <source src="//gossv.vcg.com/videos/mts_videos/medium/VCG42655246088.mp4" type="video/mp4"></video>
+      <video id="my-video" classname="video-js vjs-default-skin" controls="controls" autoplay="" preload="auto" loop width="" height="450"> <source :src="theData.detail.video" type="video/mp4"></video>
     </div>
 
     <similar-list :data-list="dataList">
@@ -88,12 +92,12 @@ export default {
 <style lang="less" scoped>
 .breadcrumb {
   width: 1000px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .intro-box {
   width: 1000px;
   height: 500px;
-  margin: 20px auto;
+  margin: 20px auto 30px;
   background: white;
   border-radius: 4px;
   .leftcon {
@@ -137,18 +141,22 @@ export default {
     }
   }
 }
+.about-bar {
+  width: 1000px;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 3px;
+}
 .video-box {
   width: 1000px;
   height: 500px;
-  margin: 20px auto;
+  margin: 10px auto 20px;
   background: white;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.similar {
-  width: 1000px;
-  margin: 0 auto;
 }
 </style>
