@@ -12,9 +12,8 @@
       <div class="leftcon">
         <template>
           <el-carousel height="500px" :interval="3000" arrow="always">
-            <el-carousel-item v-for="item in theData.detail.focus" :key="item">
-              <!-- <h3>{{ item }}</h3> -->
-              <img :src="item.preview" alt="">
+            <el-carousel-item v-for="item in theData.detail.focus" :key="item.id">
+              <img :src="item.preview">
             </el-carousel-item>
           </el-carousel>
         </template>
@@ -103,6 +102,14 @@ export default {
   .leftcon {
     width: 750px;
     float: left;
+    overflow: hidden;
+    .el-carousel {
+      .el-carousel__container {
+        .el-carousel__arrow {
+          background-color: red;
+        }
+      }
+    }
   }
   .rightcon {
     float: right;
@@ -152,7 +159,7 @@ export default {
 .video-box {
   width: 1000px;
   height: 500px;
-  margin: 10px auto 20px;
+  margin: 13px auto 20px;
   background: white;
   border-radius: 4px;
   display: flex;

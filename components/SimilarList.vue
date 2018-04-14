@@ -81,6 +81,18 @@ export default {
         line-height: 25px;
         color: #02c2ec;
       }
+      a:link {
+        text-decoration: none;
+        color: #535353;
+      }
+      a:visited {
+        text-decoration: none;
+        color: #535353;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #353535;
+      }
     }
     ul:hover {
       border: 3px solid rgb(148, 227, 230);

@@ -109,3 +109,36 @@ body {
     background-color: #edf0f0;
     color: #353535;
 }
+
+a:link {
+    text-decoration: none;
+    color: #535353;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #535353;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #353535;
+}
+
+.el-carousel__arrow {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.el-carousel__arrow:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.el-carousel__indicator {
+    padding: 15px 5px !important;
+}
+
+.el-carousel .el-carousel__indicators .el-carousel__indicator .el-carousel__button {
+    /* background-color: red; */
+    height: 5px;
+    width: 40px;
+}
