@@ -11,7 +11,7 @@
     <div class="intro-box">
       <div class="leftcon">
         <template>
-          <el-carousel height="500px" :interval="5000" arrow="always">
+          <el-carousel height="500px" :interval="3000" arrow="always">
             <el-carousel-item v-for="item in theData.detail.focus" :key="item">
               <!-- <h3>{{ item }}</h3> -->
               <img :src="item.preview" alt="">

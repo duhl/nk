@@ -5,7 +5,7 @@
         <a :href="`/detail/${item.id}`" :id="item.id">
           <li><img :src="item.thumbnail" alt=""></li>
           <li class="tit">{{item.name}}</li>
-          <li class="price">{{item.price}}</li>
+          <li class="price">￥{{item.price}}</li>
         </a>
       </ul>
     </div>
@@ -62,13 +62,25 @@ export default {
         }
       }
       li.tit {
-        padding: 0 10px;
+        padding: 0 5px;
         line-height: 25px;
       }
       li.price {
-        padding: 0 10px;
+        padding: 0 5px;
         line-height: 25px;
         color: #02c2ec;
+      }
+      a:link {
+        text-decoration: none;
+        color: #535353;
+      }
+      a:visited {
+        text-decoration: none;
+        color: #535353;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #353535;
       }
     }
     ul:hover {
