@@ -6,7 +6,7 @@
     <div class="list-con">
       <ul v-for="item in dataList" :key="item.id">
         <nuxt-link :to="{path:`/detail/${item.id}`}" :id="item.id">
-          <li><img :src="item.thumbnail" alt=""></li>
+          <li><img :src="`/newkr/${item.thumbnail}`"></li>
           <li class="tit">{{item.name}}</li>
           <li class="price">{{item.price}}</li>
         </nuxt-link>

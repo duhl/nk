@@ -88,11 +88,14 @@ module.exports = {
     ],
     vendor: ['element-ui']
   },
+  router: {
+    base: '/newkr/'
+  },
   generate: {
-    // routes: [
-    //   '/detail/1001',
-    //   '/detail/1002',
-    // ]
+    routes: [
+      '/detail/1001',
+      '/detail/1002',
+    ]
     // routes: function () {
     //   axios.get('../../data/home/product_list.js')
     //     .then((res) => {

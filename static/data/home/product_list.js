@@ -2,25 +2,25 @@ export default {
   status: 0,
   data: [{
       id: 1001,
-      // thumbnail: "../../images/product_list/1001/preview_1001.jpg",
-      thumbnail: "../../images/product_list/1001/preview_1001.jpg",
+      // thumbnail: "/images/product_list/1001/preview_1001.jpg",
+      thumbnail: "/images/product_list/1001/preview_1001.jpg",
       name: "探索全世界只为进入你的世界",
       price: "8888",
       detail: {
         focus: [{
-            preview: "../../images/product_list/1001/focus/001.jpg",
+            preview: "/images/product_list/1001/focus/001.jpg",
             url: ""
           },
           {
-            preview: "../../images/product_list/1001/focus/002.jpg",
+            preview: "/images/product_list/1001/focus/002.jpg",
             url: ""
           },
           {
-            preview: "../../images/product_list/1001/focus/003.jpg",
+            preview: "/images/product_list/1001/focus/003.jpg",
             url: ""
           },
           {
-            preview: "../../images/product_list/1001/focus/004.jpg",
+            preview: "/images/product_list/1001/focus/004.jpg",
             url: ""
           },
         ],

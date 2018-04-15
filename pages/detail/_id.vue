@@ -13,7 +13,7 @@
         <template>
           <el-carousel height="500px" :interval="3000" arrow="always">
             <el-carousel-item v-for="item in theData.detail.focus" :key="item.id">
-              <img :src="item.preview">
+              <img :src="`/newkr/${item.preview}`">
             </el-carousel-item>
           </el-carousel>
         </template>
