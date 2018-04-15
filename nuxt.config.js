@@ -1,3 +1,4 @@
+const axios = require('axios')
 module.exports = {
   /*
    ** Headers of the page
@@ -86,5 +87,21 @@ module.exports = {
       },
     ],
     vendor: ['element-ui']
+  },
+  generate: {
+    // routes: [
+    //   '/detail/1001',
+    //   '/detail/1002',
+    // ]
+    // routes: function () {
+    //   axios.get('../../data/home/product_list.js')
+    //     .then((res) => {
+    //       // console.log('牛逼了', res)
+    //       return res.data.map((item) => {
+    //         return '/detail/' + item.id
+    //       })
+    //     })
+    //   // .catch(callback)
+    // }
   }
 }

@@ -1,10 +1,10 @@
 <template>
   <section>
-      <header-box/>
-      <theme/>
-      <classified-nav/>
-      <product-list :data-list="dataList"/>
-      <footer-box/>
+    <header-box/>
+    <theme/>
+    <classified-nav/>
+    <product-list :data-list="dataList" />
+    <footer-box/>
   </section>
 </template>
 
@@ -15,7 +15,7 @@ import ClassifiedNav from "~/components/Home/ClassifiedNav.vue";
 import ProductList from "~/components/home/ProductList.vue";
 import FooterBox from "~/components/FooterBox.vue";
 import dataProductlist from "~/static/data/home/product_list.js";
-
+const axios = require("axios");
 export default {
   data() {
     return {};
@@ -34,6 +34,14 @@ export default {
   },
   mounted() {
     console.log(this.dataList);
+    // axios.get("../../data/home/product_list.js").then(res => {
+    //   console.log("this is", res);
+    //   // var routes = res.data.map(user => {
+    //   //   return "/users/" + user.id;
+    //   // });
+    //   // callback(null, routes);
+    // });
+    // // .catch(callback);
   },
   methods: {}
 };

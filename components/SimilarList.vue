@@ -5,11 +5,11 @@
     </ul>
     <div class="list-con">
       <ul v-for="item in dataList" :key="item.id">
-        <a :href="`/detail/${item.id}`" :id="item.id">
+        <nuxt-link :to="{path:`/detail/${item.id}`}" :id="item.id">
           <li><img :src="item.thumbnail" alt=""></li>
           <li class="tit">{{item.name}}</li>
           <li class="price">{{item.price}}</li>
-        </a>
+        </nuxt-link>
       </ul>
     </div>
   </div>
