@@ -127,6 +127,7 @@ a:hover {
 
 .el-carousel__arrow {
     background-color: rgba(0, 0, 0, 0.3) !important;
+    font-size: 25px !important;
 }
 
 .el-carousel__arrow:hover {
