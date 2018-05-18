@@ -11,7 +11,7 @@
     <div class="intro-box">
       <div class="leftcon">
         <template>
-          <el-carousel height="500px" :interval="3000" arrow="always">
+          <el-carousel height="400px" :interval="3000" arrow="always">
             <el-carousel-item v-for="item in theData.detail.focus" :key="item.id">
               <img :src="`/newkr/${item.preview}`">
             </el-carousel-item>
@@ -104,6 +104,7 @@ export default {
     float: left;
     overflow: hidden;
     .el-carousel {
+      margin-top: 50px;
       .el-carousel__container {
         .el-carousel__arrow {
           background-color: red;

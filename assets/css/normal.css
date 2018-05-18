@@ -25,8 +25,8 @@ input,
 textarea,
 th,
 td {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -34,7 +34,7 @@ button,
 input,
 select,
 textarea {
-    font: 13px/1.5 'tahoma', "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", arial, \5b8b\4f53;
+  font: 13px/1.5 'tahoma', "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", arial, \5b8b\4f53;
 }
 
 h1,
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 address,
@@ -51,95 +51,106 @@ cite,
 dfn,
 em,
 var {
-    font-style: normal;
+  font-style: normal;
 }
 
 code,
 kbd,
 pre,
 samp {
-    font-family: couriernew, courier, monospace;
+  font-family: couriernew, courier, monospace;
 }
 
 small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 ul,
 ol,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 sup {
-    vertical-align: text-top;
+  vertical-align: text-top;
 }
 
 sub {
-    vertical-align: text-bottom;
+  vertical-align: text-bottom;
 }
 
 legend {
-    color: #000;
+  color: #000;
 }
 
 fieldset,
 img {
-    border: 0;
+  border: 0;
 }
 
 button,
 input,
 select,
 textarea {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 /* default backgroudColor */
 
 body {
-    background-color: #edf0f0;
-    color: #353535;
+  background-color: #edf0f0;
+  color: #353535;
 }
 
 a:link {
-    text-decoration: none;
-    color: #535353;
+  text-decoration: none;
+  color: #535353;
 }
 
 a:visited {
-    text-decoration: none;
-    color: #535353;
+  text-decoration: none;
+  color: #535353;
 }
 
 a:hover {
-    text-decoration: none;
-    color: #353535;
+  text-decoration: none;
+  color: #353535;
+}
+
+.el-carousel__item {
+  display: flex;
+  align-items: center;
+  /* margin-top: 50px; */
+  /* height: 300px; */
+}
+
+.el-carousel__item img {
+  width: 100%
 }
 
 .el-carousel__arrow {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    font-size: 25px !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  font-size: 25px !important;
 }
 
 .el-carousel__arrow:hover {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .el-carousel__indicator {
-    padding: 15px 5px !important;
+  padding: 15px 5px !important;
 }
 
 .el-carousel .el-carousel__indicators .el-carousel__indicator .el-carousel__button {
-    /* background-color: red; */
-    height: 5px;
-    width: 40px;
+  /* background-color: red; */
+  height: 5px;
+  width: 40px;
 }

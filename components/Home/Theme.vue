@@ -11,7 +11,7 @@
 .main {
   width: 100%;
   height: 350px;
-  background: url("~static/images/global/theme.jpg") no-repeat;
+  background: url("~static/images/global/theme.png") no-repeat;
   background-size: cover;
 }
 </style>
