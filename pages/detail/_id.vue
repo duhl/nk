@@ -35,11 +35,13 @@
         </ul>
       </div>
     </div>
-    <div class="about-bar">
+    <div class="about-bar" v-if="theData.detail.video">
       相关视频
     </div>
-    <div class="video-box">
-      <video id="my-video" classname="video-js vjs-default-skin" controls="controls" autoplay="" preload="auto" loop width="" height="450"> <source :src="theData.detail.video" type="video/mp4"></video>
+    <div class="video-box" v-if="theData.detail.video">
+      <!-- <video id="my-video" classname="video-js vjs-default-skin" controls="controls" autoplay="" preload="auto" loop width="" height="450"> <source :src="theData.detail.video" type="video/mp4"></video> -->
+      <!-- {{theData.detail.video}} -->
+      <div v-html="theData.detail.video"></div>
     </div>
 
     <similar-list :data-list="dataList">
@@ -159,7 +161,7 @@ export default {
 }
 .video-box {
   width: 1000px;
-  height: 500px;
+  height: 498px;
   margin: 13px auto 20px;
   background: white;
   border-radius: 4px;
